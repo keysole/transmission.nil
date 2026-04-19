@@ -72,6 +72,7 @@
 [ext_resource type="AudioStream" uid="uid://bbqwlv3dn1t2e" path="res://audio/Blip22.wav" id="70_lxwtw"]
 [ext_resource type="AudioStream" uid="uid://wufhaepochqt" path="res://audio/Blip33.wav" id="71_ir1d4"]
 [ext_resource type="AudioStream" uid="uid://d4lmwstxxpy12" path="res://audio/Blip32.wav" id="71_tj74d"]
+[ext_resource type="AudioStream" uid="uid://cn86ech8qh40q" path="res://audio/Blip30.wav" id="73_yy5nj"]
 
 [sub_resource type="Environment" id="Environment_dwbse"]
 background_mode = 3
@@ -1294,3 +1295,7 @@ stream = ExtResource("71_tj74d")
 [node name="RotateSfx" type="AudioStreamPlayer" parent="." unique_id=618800569]
 unique_name_in_owner = true
 stream = ExtResource("71_ir1d4")
+
+[node name="PanelSfx" type="AudioStreamPlayer" parent="." unique_id=1883550524]
+unique_name_in_owner = true
+stream = ExtResource("73_yy5nj")

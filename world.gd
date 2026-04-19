@@ -68,7 +68,12 @@ func _process(delta: float) -> void:
 		var mode := DisplayServer.window_get_mode()
 		var is_window: bool = mode != DisplayServer.WINDOW_MODE_FULLSCREEN
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN if is_window else DisplayServer.WINDOW_MODE_WINDOWED)
-
+	elif Input.is_action_just_pressed(&'ui_cancel') and Input.is_action_pressed(&'ctrl'):
+		_quit()
+	elif Input.is_action_just_pressed(&'ui_cancel'):
+		if %Panels.get_child_count() != 0:
+			%Panels.get_child(-1).queue_free()
+	
 
 func start_game() -> void:
 	switch_to_next_sequence()

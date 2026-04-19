@@ -151,6 +151,7 @@ func _show_target_data_panel(target_data : TargetData) -> void:
 	var target_data_panel = TARGET_DATA_PANEL.instantiate() as TargetDataPanel
 	target_data_panel.set_frequency_data(target_data, frequency_start)
 	%Panels.add_child(target_data_panel)
+	%PanelSfx.play()
 
 
 func hide_targets(sequence : World.Sequence) -> void:
