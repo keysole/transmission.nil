@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="AllTargetsData" format=3 uid="uid://bfkxfe6rdj8su"]
+
+[ext_resource type="Script" uid="uid://qd1shx57y0ck" path="res://data/target_data.gd" id="1_jbhi2"]
+[ext_resource type="Resource" uid="uid://cqt83ww7wta0p" path="res://data/targets/correct_target_sequence2_1.tres" id="2_2nkq5"]
+[ext_resource type="Script" uid="uid://f3ahfdbdp6nk" path="res://data/all_targets_data.gd" id="2_gjtwx"]
+[ext_resource type="Resource" uid="uid://c2ua3u0cyjs7d" path="res://data/targets/correct_target_sequence2_2.tres" id="3_pxo4j"]
+[ext_resource type="Resource" uid="uid://ge01ok7q2jdj" path="res://data/targets/target_sequence2_1.tres" id="4_ddqq4"]
+[ext_resource type="Resource" uid="uid://dr23ca7ymfqes" path="res://data/targets/target_sequence2_2.tres" id="5_rsjat"]
+[ext_resource type="Resource" uid="uid://13l7p1irtys4" path="res://data/targets/target_sequence2_3.tres" id="6_ix32n"]
+
+[resource]
+script = ExtResource("2_gjtwx")
+list = Array[ExtResource("1_jbhi2")]([ExtResource("2_2nkq5"), ExtResource("3_pxo4j"), ExtResource("4_ddqq4"), ExtResource("5_rsjat"), ExtResource("6_ix32n")])
+metadata/_custom_type_script = "uid://f3ahfdbdp6nk"

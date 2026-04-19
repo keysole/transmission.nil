@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://8tv6sets7l2"]
+
+[ext_resource type="Script" uid="uid://yc61p0tnjaec" path="res://panels/map/target.gd" id="1_e1yvt"]
+[ext_resource type="Texture2D" uid="uid://lsw430vn5itq" path="res://panels/map/target.png" id="1_t2jmu"]
+[ext_resource type="Resource" uid="uid://ca2twb7ahl8vk" path="res://data/targets/correct_target_sequence1.tres" id="2_5ebp1"]
+[ext_resource type="FontFile" uid="uid://dnflnkinr1xkv" path="res://ui/fonts/MonospaceBold.ttf" id="4_uqips"]
+[ext_resource type="AudioStream" uid="uid://16ubj6nv2lj6" path="res://audio/Blip12.wav" id="5_eig5c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t2jmu"]
+size = Vector2(40, 35)
+
+[node name="Target" type="Area2D" unique_id=2014813233 groups=["targets"]]
+script = ExtResource("1_e1yvt")
+target_data = ExtResource("2_5ebp1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=798891831]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_t2jmu")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1750876594]
+modulate = Color(3.2944162, 3.2944162, 2.4602525, 1)
+scale = Vector2(4, 4)
+texture = ExtResource("1_t2jmu")
+
+[node name="Label" type="Label" parent="." unique_id=132698478]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = -37.5
+offset_right = 24.0
+offset_bottom = -14.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(2.9956112, 2.0493958, 0, 1)
+theme_override_fonts/font = ExtResource("4_uqips")
+text = "RS-11"
+
+[node name="RevealSfx" type="AudioStreamPlayer" parent="." unique_id=1345522568]
+unique_name_in_owner = true
+stream = ExtResource("5_eig5c")
+
+[node name="SfxTimer" type="Timer" parent="." unique_id=477566129]
+wait_time = 0.8

@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cc2k1xxn6sbd1"]
+
+[ext_resource type="Script" uid="uid://b7dke7w1p8v7t" path="res://panels/target/frequency_bar.gd" id="1_1sub4"]
+[ext_resource type="Texture2D" uid="uid://brppvgsx0x3uh" path="res://ui/divisor_green.png" id="1_d7wut"]
+
+[node name="FrequencyBar" type="VBoxContainer" unique_id=1599294504]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -47.0
+offset_top = -362.0
+offset_right = 47.0
+offset_bottom = 362.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 2
+script = ExtResource("1_1sub4")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1543496494]
+modulate = Color(2.454227, 2.454227, 2.454227, 1)
+layout_mode = 2
+texture = ExtResource("1_d7wut")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=605728938]
+layout_mode = 2
+theme_override_font_sizes/font_size = 55
+text = "136"

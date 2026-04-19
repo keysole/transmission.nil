@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CommsData" format=3 uid="uid://cs0bb7gqq13i1"]
+
+[ext_resource type="Script" uid="uid://3f2g2vv3kfw0" path="res://data/comms/comms_data.gd" id="1_c51ag"]
+
+[resource]
+script = ExtResource("1_c51ag")
+status_text = "Reinitializing...
+Establishing connection...
+Connected..."
+description_text = "Moving target detected in [color=ORANGE]35-50[/color] km range. [color=ORANGE]East[/color] direction.
+Frequencies range: [color=ORANGE]30-60[/color] MHz.
+Monitor target's movements. [color=ORANGE]Standby[/color]."
+correct_text = "[color=RED][font_size=100]GOOD JOB
+NOW'S OUR TURN[/font_size][/color]"
+incorrect_text = "[color=ORANGE]WARNING
+ABORT MISSSION
+RETR&#^&()@$0[/color]"
+metadata/_custom_type_script = "uid://3f2g2vv3kfw0"

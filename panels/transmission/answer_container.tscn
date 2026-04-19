@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://55ss5iioe3hq"]
+
+[ext_resource type="FontFile" uid="uid://dx2f5qoi1o6ty" path="res://ui/fonts/Monospace.ttf" id="1_0m36j"]
+[ext_resource type="Script" uid="uid://cuigx15qtx1pd" path="res://panels/transmission/answer_container.gd" id="1_yvesx"]
+[ext_resource type="Script" uid="uid://deqluk4efxagw" path="res://panels/transmission/name_edit.gd" id="3_vt232"]
+
+[node name="AnswerContainer" type="HBoxContainer" unique_id=680521425]
+alignment = 1
+script = ExtResource("1_yvesx")
+
+[node name="NameEdit" type="LineEdit" parent="." unique_id=730124885]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("1_0m36j")
+theme_override_font_sizes/font_size = 32
+placeholder_text = "AA"
+alignment = 1
+max_length = 2
+script = ExtResource("3_vt232")
+
+[node name="Label" type="Label" parent="." unique_id=751074061]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "-"
+horizontal_alignment = 1
+
+[node name="NumEdit" type="LineEdit" parent="." unique_id=1395109933]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("1_0m36j")
+theme_override_font_sizes/font_size = 32
+placeholder_text = "00"
+alignment = 1
+max_length = 2

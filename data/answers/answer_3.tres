@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AnswerData" format=3 uid="uid://dfiwtwgtfgb3d"]
+
+[ext_resource type="Script" uid="uid://qd1shx57y0ck" path="res://data/target_data.gd" id="1_jg7g7"]
+[ext_resource type="Script" uid="uid://ol2shw6l2aqw" path="res://data/answer_data.gd" id="2_kkq5r"]
+[ext_resource type="Resource" uid="uid://d4ai7smtg24po" path="res://data/targets/correct_target_sequence3.tres" id="2_p7hpd"]
+
+[resource]
+script = ExtResource("2_kkq5r")
+list = Array[ExtResource("1_jg7g7")]([ExtResource("2_p7hpd")])
+metadata/_custom_type_script = "uid://ol2shw6l2aqw"

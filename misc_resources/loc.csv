@@ -1,0 +1,543 @@
+keys,ru,en
+Kholmy,Холмы,Kholmy
+Vyaz,Вязь,Vyaz
+Engrad,Энград,Engrad
+Kirsino,Кирсино,Kirsino
+Putevaya,Путевая,Putevaya
+Lisino,Лисино,Lisino
+Voronovo,Вороново,Voronovo
+Ozerki,Озерки,Ozerki
+Places,Места,
+Streets,Улицы,
+,,
+Calendar,Календарь,
+Theater,Театр,
+Cinema,Кинотеатр,
+Hotel,Гостиница,
+Hostel,Хостел,
+Restaurant,Ресторан,
+Cafe,Кафе,
+Bar,Бар,
+Fast Food,Фаст Фуд,
+Book Shop,Книжный Магазин,
+Supermarket,Супермаркет,
+Club,Клуб,
+Anti-Cafe,Анти-Кафе,
+Pharmacy,Аптека,
+Bakery,Пекарня,
+Park,Парк,
+Library,Библиотека,
+Market,Рынок,
+Bookshop,Книжный,
+January,Январь,
+February,Февраль,
+March,Март,
+April,Апрель,
+May,Май,
+June,Июнь,
+July,Июль,
+August,Август,
+September,Сентябрь,
+October,Октябрь,
+November,Ноябрь,
+December,Декабрь,
+,,
+dS,В,S
+dM,П,M
+dTs,В,T
+dW,С,W
+dT,Ч,T
+dF,П,F
+dSt,С,S
+,,
+Settings,Настройки,
+main,общий,
+sfx,звуки,
+ambient,фон,
+full screen,полный экран,
+v-sync,v-sync,
+Map,Карта,
+Weather,Погода,
+EMPTY,ПУСТО,
+Engrad and surroundings,Энград и ближайшие города,
+Login,Логин,
+Password,Пароль,
+Enter,Войти,
+All Mail,Вся Почта,
+Search,Поиск,
+Search by name or full name,Поиск по имени или имени и фамилии,
+email address,email адрес,
+Start,Начать,
+No address found,Адрес не найден,
+Place,Место,
+Day,День,
+Month,Месяц,
+Reconstruct,Реконструировать,
+Submit,Отправить,
+Town,Город,
+Street,Улица,
+House,Дом,
+No results,Нет результатов,
+Aleksandra,Александра,
+Smirnova,Смирнова,
+Kulikova,Куликова,
+Sovelyeva,Совельева,
+Alekhina,Алехина,
+Polyakova,Полякова,
+Zubova,Зубова,
+Yakovleva,Яковлева,
+age,Возраст,
+sex,Пол,
+email alt,email альт.,
+phone number,Номер Телефона,
+Rain,Дождь,
+Snow,Снег,
+Sunny,Солнечно,
+Partly Cloudy,Переменная Облачность,
+Cloudy,Облачно,
+Overcast,Пасмурно,
+Lightning,Гроза,
+Blizzard,Метель,
+Heavy Blizzard,Сильная Метель,
+Light,Слабый,
+Moderate,Умеренный,
+Heavy,Сильный,
+Alina,Алина,
+Kolikova,Коликова,
+Kirillova,Кириллова,
+Sklokina,Склокина,
+Rodnina,Роднина,
+Baranova,Баранова,
+Antonova,Антонова,
+Dubova,Дубова,
+Karlova,Карлова,
+Maksim,Максим,
+Muradov,Мурадов,
+Kulakov,Кулаков,
+Baranov,Баранов,
+Abramov,Абрамов,
+Zubov,Зубов,
+Albertov,Альбертов,
+Inna,Инна,
+Sevastyanova,Севастьянова,
+male,мужской,
+female,женский,
+Centralnaya,Центральная,
+Zarechnaya,Заречная,
+Vostochnaya,Восточная,
+Kotlozavodskaya,Котлозаводская,
+Shkolnaya,Школьная,
+Lenivka,Ленивка,
+Solenaya,Соленая,
+Zvezdnaya,Звездная,
+Verkhnya,Верхняя,
+Sobachya,Собачья,
+Chernaya,Черная,
+Pozharnaya,Пожарская,
+Krugovaya,Круговая,
+Bolshaya,Большая,
+Svetlaya,Светлая,
+Uzkaya,Узкая,
+Sosnovaya,Сосновая,
+Nebesnaya,Небесная,
+Belaya,Белая,
+Karaulnaya,Караульная,
+Vyazov,Вязов,
+Shirokaya,Широкая,
+Verkhnya,Верхняя,
+Molochnaya,Молочная,
+Sozidaniya,Созидания,
+Kamennaya,Каменная,
+Mayskaya,Майская,
+Blagodatskaya,Благодатская,
+Dorozhnaya,Дорожная,
+Letnya,Летняя,
+Luchevaya,Лучевая,
+Novaya,Новая,
+Sonlivaya,Сонливая,
+Severnaya,Северная,
+Sportivnaya,Спортивная,
+Tikhaya,Тихая,
+Vinogradnaya,Виноградная,
+Temnaya,Темная,
+Tupik,Тупик,
+Solnechnaya,Солнечная,
+Svetlaya,Светлая,
+Vodnaya,Водная,
+Koptevaya,Коптевая,
+Vozdushnaya,Воздушная,
+Kukushkina,Кукушкина,
+Krasivaya,Красивая,
+Skuchnaya,Скучная,
+Novaya,Новая,
+Sadovaya,Садовая,
+Zelenaya,Зеленая,
+Sorokina,Сорокина,
+Nizhnaya,Нижняя,
+Lesnaya,Лесная,
+Granitnaya,Гранитная,
+Yablochnaya,Яблочная,
+Sosedskaya,Соседская,
+Polevaya,Полевая,
+Kirpichnaya,Кирпичная,
+Vishnevaya,Вишневая,
+Aprelskaya,Апрельская,
+Straraya,Старая,
+Otradnaya,Отрадная,
+Lunnaya,Лунная,
+Staraya,Старая,
+Malaya,Малая,
+Bread Place,Хлебное Место,
+Elephant,Элефант,
+72mm,72мм,
+Troubadour,Трубадур,
+Owl's Nest,Совиное Гнездо,
+Produkty,Продукты,
+Centralny,Центральный,
+Atmosphere,Атмосфера,
+Magnetron,Магнетрон,
+Klever,Клевер,
+Zdorov'ye,Здоровье,
+Groza,Гроза,
+Skalka,Скалка,
+Produkty,Продукты,
+Elektroshok,Электрошок,
+Vzglyad Kubrika,Взгляд Кубрика,
+Babylon,Вавилон,
+Arlekin,Арлекин,
+Dr. Dom,Доктор Дом,
+Chaynoe Mesto,Чайное Место,
+Glebsky,Глебский,
+Svet,Свет,
+Rubilnik,Рубильник,
+Pobedy,Победы,
+Integral,Интеграл,
+Matrix,Матрица,
+Train's Arrival,Прибытие Поезда,
+Chetyri Komnaty,Четыре Комнаты,
+Friends,Друзья,
+Chernye Knigi,Черные Книги,
+Zero,Зеро,
+Bolshaya Lozhka,Большая Ложка,
+Pantalone,Панталоне,
+Coffee Supreme,,
+Tikhoe Mesto,Тихое Место,
+Derevenskiy,Деревенский,
+Znanie,Знание,
+Vkusnye Bulki,Вкусные Булки,
+Spokoystviya,Спокойствия,
+Yablochnyi,Яблочный,
+Ozernyi,Озерный,
+Proizvodnaya,Производная,
+Pirozhki,Пирожки,
+Dvoynoe R,Двойное Р,
+Edaki,Едаки,
+Rybka,Рыбка,
+Gollandec,Голландец,
+Nedosmotr,Недосмотр,
+Apparat,Аппарат,
+Name,Название,
+Attempting to reconstruct...,Попытка реконструировать...,
+from,от,
+to,для,
+Breaking...,Взламываем...,
+Completed\n pass: %s,Завершено\n пароль:,
+No place found,Релевантных данных нет,Nothing relevant found
+Reconstruction finished,Реконструкция завершена,
+Cheapest,Самый дешевый,
+In the Center,В центре,
+Of Town,Города,
+"Engrad, Centralnay st, 15","г. Энград, ул. Центральная, 15",
+Owl's,Совиное,
+Nest,Гнездо,
+ALINA_MAIL_IN_TITLE,Какого,Why the
+ALINA_MAIL_OUT_TITLE,Re: Какого,Re: Why the
+ALINA_MAIL_IN,какого черта не отвечаешь на телефон целую неделю?,"Why the hell haven’t you been answering your phone for a whole week?
+"
+ALINA_MAIL_OUT,"Прости, я потеряла свой телефон, они купили мне новый, 2226524","Sorry I lost my phone, they got me a new one, 2226524"
+ALINA_MAKS_1,"Я возвращаюсь в следующую среду в 12, встреть меня на станции","I'm coming back next wednesday at noon, meet me at the station."
+ALINA_MAKS_2,"Хорошо, можем перекусить в месте неподалеку, нужно кое-что обсудить","Sure, we can have lunch at the nearby place, there's something to discuss."
+ALINA_MAKS_3,"Кстати, где ты остаешься?","By the way, where are you gonna stay?"
+ALINA_MAKS_4,"там же, где и всегда",same as usual
+ALINA_MAKS_5,,
+INNA_ALEX_1,сааааш можешь отправить дз по матему? я забыла записать(,saaasha can you send the math homework? I forgot to write down(
+INNA_ALEX_2,"12.1, 12.2, 12.3 (а, б)","12.1, 12.2, 12.3 (a, b)"
+INNA_ALEX_3,сяп <3,thx <3
+INNA_ALEX_4,кста хочешь сходить завтра в кино?,by the way want to go to the movies tommorow?
+INNA_ALEX_5,"Хочу, но мне надо сначала спросить родителей, позвоню тебе попозже","I do, but I'll need to ask parents first, I'll call you later"
+MAIL_BOOKS,Посетите наш магазин и получите скидку 50% на все товары!,Visit our shop in the next 10 days and get 50% off on all items!
+MAIL_SCHOOL,"Не забудьте, встреча состоится завтра в 7:30 у главного входа","Don't forget, meeting tommorow at 7:30 near the main entrance"
+MAIL_STORM,"Сегодня ожидается сильная буря, пожалуйста оставайтесь дома","Strong storm is incoming today, please stay safely inside"
+MAIL_SPAM_PRIZES,"Учавствуйте, крутите колесо в казино FLAGSHIP и выигрывайте невероятные призы","Get in, roll the wheel at FLAGSHIP online casino and get amazing prizes"
+MAIL_SPAM_CASINO,Зарегестрируйтесь в нашу игру и получите шанс выиграть ШИКАРНЫЕ призы,Enter our game and get a chance to win AMAZING prizes!
+MAKS_PLACE_MAIL,"Я нашел тихое место к северу от тебя, я позвоню, когда нужно будет заселиться","I've found a quiet place to the north of you, I'll call you when it's time to check in "
+,,
+INSIGNUM_INTRO,"Некоторое время назад Александра (Саша) Смирнова пропала. Несколько дней спустя её нашли дезориентированной на окраине ее родного города Энграда — она не помнила, что произошло, у неё не было физических травм.
+
+Дело было закрыто.
+
+Выясни, что с ней случилось.","Some time ago, Aleksandra (Sasha) Smirnova went missing, several days later she was found disoriented on the outskirts of hometown, Engrad, with no memory of what happened and no physical injuries.
+
+Case was closed.
+
+Find out what happened to her."
+RECON_HELP,"Введите данные, которые имеют непосредственное отношение к делу. В таком случае, эта программа создаст (несовершенную) цифровую реконструкцию того, что произошло.",Enter data that is directly related to the case. Then this program will create an (imperfect) digital recration of things that happened.
+Re: hw,Re: дз,
+hw,дз,
+Arrival,Прибытие,
+Re: Arrival,Re: Прибытие,
+Re: Arrival 2,Re: Прибытие 2,
+Re: Re: Arrival 2,Re: Re: Прибытие 2,
+Get in,Схватывайте,
+Limited offer,Ограниченное предложение,
+Meeting,Встреча,
+Warning,Предупреждение,
+Ready?,Вы готовы?,
+Perpetrators are,Исполнители это,Acting perpetrators are
+and,и,
+are,являются,
+They have different,У них разные,
+because,потому что,
+got,был(а),
+During meeting in the,Во время встречи в,
+added,добавил(а),
+into,в,
+’s,,
+to make her,чтобы он(а) утратил(а),
+After that (s)he and,После этого он(а) и,
+put her into,запихнули ее в,
+and drove away.,и уехали.,
+The destination was:,Их направлением был:,
+,,
+,,
+al,ал,
+ina,ина,
+si,се,
+ste,стр,
+rs,ами,
+sur,фа,
+nam,мил,
+es,ии,
+ad,удо,
+opt,чер,
+ed,ена,
+ma,ма,
+ks,кс,
+im,им,
+ro,ро,
+hy,ги,
+pn,пн,
+ol,ол,
+sa,са,
+sha,ша,
+a,а,
+a\'s,и,
+su,че,
+it,мо,
+ca,да,
+se,н,
+co,ко,
+la,лу,
+mu,му,
+rad,рад,
+ov,ов,
+ko,кол,
+lik,ик,
+ova,ова,
+ho,гос,
+te,тин,
+l,ице,
+un,со,
+con,зн,
+sci,ан,
+ous,ие,
+SASHA_POS,ну,a's
+All correct!,Все верно!,
+More than %d are incorrect,Больше чем %d неверно,
+%d or less are incorrect,%d или меньше неверно,
+INSIGNUM_HELP,"Перетаскивайте панели в слоты, чтобы составить подходящие слова.",Drag panels into slots to construct suitable words.
+,,
+MAKS_OUTGOING_TEXT,"Я сделаю это, если не в этом месяце, то по крайней мере в следующем","I’ll get it soon, if not this month then the next"
+MAKS_OUTGOING_TITLE,Скоро,Soon
+MAKS_REPLY_TITLE,Re: Скоро,Re: Soon
+MAKS_REPLY_TEXT,"Кретин, я разве уже не предупреждал тебя? Все должно быть тихо, так что не гони лошадей.
+
+Жди, когда видимость упадет, осталось недолго.","Moron, didn’t I warn you already? Everything should be quiet, so don’t rush now.
+
+Wait till visibility drops, it should happen soon."
+,,
+,,
+SLOW,Скучный день…,Slow day…
+Drink (coffee),Напиток (кофе),
+Earmuffs,Меховые наушники,
+Water bottle,Термос,Thermos
+Clothes,Одежда,
+Mirror,Зеркало,
+Lipstick,Губная помада,
+Cough syrup,Сироп от кашля,
+Purse,Кошелек,
+Hat,Шапка,
+Scarf,Шарф,
+Keys,Ключи,
+Small purse,Маленький кошелек,
+Room keys,Ключи от номера,
+Pills,Таблетки,
+Car keys,Ключи от машины,
+Wallet,Бумажник,
+Drink (Cola),Напиток (кола),
+Suitcase,Чемодан,
+Blinds,Жалюзи,
+Duct tape,Изолента,
+Scissors,Ножницы,
+Rohypnol,Рогипнол,
+ROHYPNOL_INSTRUCT,"Действующее вещество:
+Флунитразепам
+
+Фармакологическое действие:
+Возбуждает бензодиазепиновые рецепторы, потенцирует ГАМКергическую синаптическую передачу.
+
+Показания:
+Сильная бессоница. Употреблять 0.5-1 табл Перед сном
+
+Побочные действия:
+Усталость, антероградная амнезия, дезориентация перед пробуждением, угнетение дыхания","Active component: 
+Flunitrazepam
+
+
+Pharmacological action:
+Stimulates benzodiazepine receptors, potentiates GABAergic synaptic transmission.
+
+
+Indications for use: 
+Severe insomnia. Consume 0.5-1 tabl. before sleep.
+
+
+Side effects:
+Fatigue, headaches, anterograde amnesia, disorientation upon awakening, respiratory depression."
+,,
+"...so we'll just take some photos and that's it, the pay is very good.","…так что мы просто сделаем фото и все, оплата очень хорошая.",
+"Also won't even remember anything, I just need to get the stuff. So can you do it?","И даже ничего не вспомнит, мне только нужно достать препарат. Так ты сможешь?",
+"If I ask her to visit me, she'll come, unless it's too far.","Если я попрошу ее навестить меня, то она придет, если это достаточно близко.",
+"Good, there's a quiet place to the north of where you're staying.","Отлично, к северу от того места, где ты остановилась, есть тихое местечко.",
+I'll call you when it's time.,"Я позвоню, когда придет время.",
+"...I need to get back home or my parents will get worried, sorry","...мне нужно возвращаться домой или родители будут волноваться, прости",
+How many times do I have to repeat this to you? They are not your parents.,Сколько еще раз тебе еще повторить?! Эти люди тебе не родители,How many times do I have to repeat this to you?! These people are not your parents.
+,,
+,,
+"I'll go start the car, message when it works, I'll help you carry. ","Я пойду заводить машину, напиши, когда сработает, помогу донести",
+"Hey, is the party still on? I bought charcoal and lighter fluid","Хей, туса еще в деле? Я купил углей и розжиг",
+"Yeah, sure",А как же,
+"By the way, don't drive through the southern bridge, it's being repaired now","Да, кстати, не едь по южному мосту, его чинят",
+"I never went the other way, give some directions","Я никогда не ездил другим путем, дай указание","I’ve never used a different route, give some dirrections"
+"Just go straight then take a left turn for a dirtroad, you can drive fine on it","Едь прямо, потом поворот налево на проселочную дорогу, по ней можно нормально проехать",
+Got it,Понял,
+SMS_BALANCE,Пополните баланс телефона в ближайшее время или услуги предоставления связи будут приостановлен,"Please replenish your phone balance soon, or your connection services will be suspended"
+"I'm arriving, 5th railcar","Я подъезжаю, пятый вагон",
+Messages,Сообщения,
+Notepad,Блокнот,
+Znak,Знак,
+filter,фильтр,
+"Party on the 1st at my place, spread the word","Вечеринка первого у меня дома, передай остальным",
+,,
+left the place,покинули место,
+and then drove away.,и затем уехали.,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+sh,ши,
+,,
+се,се,
+st,ст,
+er,ра,
+s,ми,
+,,
+,,
+mak,мак,
+sim,сим,
+,,
+,,
+,,
+na,м,
+m,ил,
+es,ии,
+,,
+ad,уд,
+opt,оч,
+e,ер,
+d,ена,
+,,
+,,
+Sasha,Саша,
+sisters,сестрами,
+surnames,фамилии,
+adopted,удочерена,
+,,
+Power OFF,Выключить,
+hotel,гостинице,
+rohypnol,рогипнол,
+sashSASHA_POS,сашину,sasha's
+cola,колу,
+unconscious,сознание,
+suitcase,чемодан,
+Try Again,Попробовать еще раз,
+Give up,Сдаться,
+Are you sure?,Вы уверены?,
+Yes,Да,
+No,Нет,
+INTRO_1,"Хех, он и правда крутится","Heh, it really is rotating…"
+"Well, it's getting late, time to get serious","Ну, уже поздно, пора браться за дело",
+I need to find something to play,"Нужно найти, во что поиграть",
+"Download games for free, no registration, search","Скачать игры бесплатно, без регистрации и т.д.; поиск ",
+How come I've never heard of it,И как только я никогда о ней не слышал,
+"Well, this looks interesting, action-adventure, amazing graphics","Хм, выглядит интересно, открытый мир, хорошая графика","Well, this looks interesting, open world, good graphics"
+Guess I'll try it out,Надо попробовать,
+,,
+In lucem prodeo…,,
+"Hello, my dear plaything","Привет, моя новая игрушка","Hello, my new plaything"
+"Since you got into my net, let's have some fun, shall we","Раз ты попался в мою сеть, то давай немного повеселимся","Since you got fallen my net, let's have some fun, shall we"
+What should I do with you?,Что же мне с тобой сделать?,
+"I know, let's have you solve a riddle if you will","Точно, давай ты попробуешь решить загадку","I know, try solving a riddle for me"
+All the necessary tools will be right here at your disposal,Я дам тебе все необходимые инструменты,I’ll give you all the tools you need
+"I'll give you until sunrise, should be enough time","Даю тебе времени до рассета, этого должно хватить","You’ve got until sunrise, that should be plenty"
+Solve it in time and you're free,Реши ее вовремя и будешь свободен,"Solve it in time, and you're free
+"
+And if you fail...,Ну а если не справишься...,But if you fail...
+I'll make you my eternal servant!,То станешь моим слугой навечно!,You’ll become my servant for eternity!
+"Good luck, entertain me",Удачи. Повесели меня,Good luck. Entertain me
+,,
+Congratulations!,Поздравляю!,
+You did well!,Ты хорошо справился!,
+"And now I have to set you free, how sad...","Но теперь я должна тебя освободить, как грустно...","But now I have to set you free, how sad..."
+"Maybe let's have more fun some other time, what do you think?","Может, когда-нибудь еще повеселимся?",
+"Anyway, bye-bye for now...","Ну а пока что, vale...","Anyway, vale for now..."
+,,
+It was fun watching you suffer!,Было весело смотреть за твоими страданиями!,
+"Maybe let's try something harder some other time, what do you think?",Может попробуем что-то посложнее в следующий раз?,
+You managed it way too fast somehow,Ты справился как-то слишком быстро,
+TEXT_TIP,"Спасибо. Анонимное сообщение получено.
+Мы рассмотрим информацию в ближайшее время.","Thank you.Anonymous tip received. 
+We will review the information promptly."
+,,
+PROTAG_OUTRO,"Внезапно я задумался, а существовала ли вообще в этом мире справедливость?","Suddenly I started thinking, was there such a thing as justice in this world?"
+,,
+game by keysole,автор: keysole,
+thanks for playing,спасибо за игру,
+finish,завершить,
+,,
+MALLEUS_HELP,"Введите email адрес, чтобы взломать его. Не сработает для всех адресов.
+
+Пароль будет запомнен автоматически","Enter email address to break it's password. Won't work for all addresses.
+
+Password will be remembered automatically."
+"Ugh, you've always been so useless",Ты всегда была такой бесполезной,

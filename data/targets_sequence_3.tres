@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="AllTargetsData" format=3 uid="uid://cepn3wkh1d82t"]
+
+[ext_resource type="Script" uid="uid://qd1shx57y0ck" path="res://data/target_data.gd" id="1_whfue"]
+[ext_resource type="Script" uid="uid://f3ahfdbdp6nk" path="res://data/all_targets_data.gd" id="2_0vpsl"]
+[ext_resource type="Resource" uid="uid://d4ai7smtg24po" path="res://data/targets/correct_target_sequence3.tres" id="2_nbcg1"]
+[ext_resource type="Resource" uid="uid://p80hfws541o8" path="res://data/targets/target_sequence3_1.tres" id="3_2lt1o"]
+[ext_resource type="Resource" uid="uid://d3omxldv18kt3" path="res://data/targets/target_sequence3_2.tres" id="4_ykaro"]
+[ext_resource type="Resource" uid="uid://ct368sgrpt3d6" path="res://data/targets/target_sequence3_3.tres" id="5_68qfl"]
+
+[resource]
+script = ExtResource("2_0vpsl")
+list = Array[ExtResource("1_whfue")]([ExtResource("2_nbcg1"), ExtResource("3_2lt1o"), ExtResource("4_ykaro"), ExtResource("5_68qfl")])
+metadata/_custom_type_script = "uid://f3ahfdbdp6nk"

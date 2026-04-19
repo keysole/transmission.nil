@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AnswerData" format=3 uid="uid://fs7ug8xibgcq"]
+
+[ext_resource type="Script" uid="uid://ol2shw6l2aqw" path="res://data/answer_data.gd" id="1_retof"]
+[ext_resource type="Script" uid="uid://qd1shx57y0ck" path="res://data/target_data.gd" id="1_rlgl7"]
+[ext_resource type="Resource" uid="uid://ca2twb7ahl8vk" path="res://data/targets/correct_target_sequence1.tres" id="2_nv1sh"]
+
+[resource]
+script = ExtResource("1_retof")
+list = Array[ExtResource("1_rlgl7")]([ExtResource("2_nv1sh")])
+metadata/_custom_type_script = "uid://ol2shw6l2aqw"

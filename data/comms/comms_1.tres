@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CommsData" format=3 uid="uid://8phctrejwbuo"]
+
+[ext_resource type="Script" uid="uid://3f2g2vv3kfw0" path="res://data/comms/comms_data.gd" id="1_a48ec"]
+
+[resource]
+script = ExtResource("1_a48ec")
+description_text = "Possible target detected in [color=ORANGE]20[/color] km range.
+Possible frequencies: [color=ORANGE]130[/color], [color=ORANGE]140[/color], [color=ORANGE]155[/color] MHz.
+Confirm target, transmit its code.	"
+metadata/_custom_type_script = "uid://3f2g2vv3kfw0"

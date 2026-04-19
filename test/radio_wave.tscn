@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bv42aec8vjg3w"]
+
+[ext_resource type="Script" uid="uid://bukxb7mcq4qvk" path="res://test/radio_wave.gd" id="1_nfggb"]
+[ext_resource type="Texture2D" uid="uid://d2rixdaxps8ka" path="res://test/sine_wave1.png" id="1_uxu71"]
+[ext_resource type="Texture2D" uid="uid://btdrvl4wyl3kb" path="res://test/sine_wave2.png" id="2_nfggb"]
+[ext_resource type="Texture2D" uid="uid://dsqr8cmg0e2ht" path="res://test/sine_wave3.png" id="3_5710g"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y5e34"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_uxu71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_nfggb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5710g")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nfggb"]
+size = Vector2(152, 81)
+
+[node name="RadioWave" type="Node2D" unique_id=1754154397]
+script = ExtResource("1_nfggb")
+speed = 400.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=632743671]
+modulate = Color(4.415934, 4.415934, 4.415934, 1)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_y5e34")
+autoplay = "default"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=123641929]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=913007518]
+position = Vector2(-2, -3.5)
+shape = SubResource("RectangleShape2D_nfggb")

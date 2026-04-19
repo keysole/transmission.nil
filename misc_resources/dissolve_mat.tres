@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://d286pvii76wdx"]
+
+[ext_resource type="Shader" uid="uid://d0vqmy53vk8h3" path="res://misc_resources/dissolve_pix.gdshader" id="1_gt5gd"]
+
+[resource]
+shader = ExtResource("1_gt5gd")
+shader_parameter/progress = 1.0
+shader_parameter/block_size = 4.0

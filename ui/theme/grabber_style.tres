@@ -1,0 +1,13 @@
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://b3y13sjrr5id8"]
+
+[ext_resource type="Texture2D" uid="uid://cnj5y0wlfnm8" path="res://ui/theme/icons/grabber_test.png" id="1_ph03v"]
+
+[resource]
+texture = ExtResource("1_ph03v")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 5.0
+texture_margin_bottom = 4.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+region_rect = Rect2(0, 0, 33, 16)

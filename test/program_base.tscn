@@ -1,0 +1,168 @@
+[gd_scene format=3 uid="uid://c8lspouafi68n"]
+
+[ext_resource type="Theme" uid="uid://3b6jfloh1m1l" path="res://ui/theme/theme_main.tres" id="1_538rr"]
+[ext_resource type="StyleBox" uid="uid://dwh70kg0acgqb" path="res://ui/theme/panel_style_bw.tres" id="2_uxijs"]
+[ext_resource type="Texture2D" uid="uid://bwa0gn3mpx2jo" path="res://ui/theme/icons/delim_bw.png" id="5_una7q"]
+
+[node name="ProgramBase" type="Control" unique_id=1518343479]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("1_538rr")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=137152051]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("1_538rr")
+theme_override_styles/panel = ExtResource("2_uxijs")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=1772156025]
+layout_mode = 2
+theme = ExtResource("1_538rr")
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer" unique_id=1530873302]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Topbar" type="Panel" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=453729058]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_uxijs")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/Topbar" unique_id=1072875348]
+visible = false
+custom_minimum_size = Vector2(0, 17)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -25.0
+offset_top = -8.0
+offset_right = -8.0
+offset_bottom = 9.0
+grow_horizontal = 0
+grow_vertical = 2
+alignment = 1
+
+[node name="MinimizeButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/Topbar/HBoxContainer" unique_id=1257186867]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(17, 17)
+layout_mode = 2
+theme = ExtResource("1_538rr")
+theme_override_font_sizes/font_size = 16
+icon_alignment = 1
+
+[node name="CloseButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/Topbar/HBoxContainer" unique_id=1494486211]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(17, 17)
+layout_mode = 2
+theme = ExtResource("1_538rr")
+theme_override_font_sizes/font_size = 16
+icon_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/Topbar" unique_id=391873831]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 5.0
+offset_top = -14.0
+offset_right = 113.0
+offset_bottom = 14.0
+grow_vertical = 2
+theme_override_constants/separation = 5
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer/MarginContainer/VBoxContainer/Topbar/HBoxContainer2" unique_id=687722903]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/Topbar/HBoxContainer2" unique_id=1037583500]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Name"
+vertical_alignment = 1
+
+[node name="Divisor" type="NinePatchRect" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=79690578]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+texture = ExtResource("5_una7q")
+axis_stretch_horizontal = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=173941114]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+theme = ExtResource("1_538rr")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/PanelContainer" unique_id=658093998]
+layout_mode = 2
+
+[node name="ControlButtons" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/PanelContainer/HBoxContainer" unique_id=1000858445]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="Return" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/PanelContainer/HBoxContainer/ControlButtons" unique_id=363640943]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="SwitchLeft" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/PanelContainer/HBoxContainer/ControlButtons" unique_id=1306563968]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="SwitchRight" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/PanelContainer/HBoxContainer/ControlButtons" unique_id=1566214043]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Divisor2" type="NinePatchRect" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1027624489]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+texture = ExtResource("5_una7q")
+axis_stretch_horizontal = 1
+
+[node name="Panel" type="Panel" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1301783294]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 1
+theme_override_styles/panel = ExtResource("2_uxijs")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/MarginContainer/VBoxContainer/Panel" unique_id=1638726641]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("1_538rr")
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4

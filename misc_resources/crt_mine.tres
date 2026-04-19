@@ -1,0 +1,20 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://ci1wihl1k8mgm"]
+
+[ext_resource type="Shader" uid="uid://bgxpotpln6ejs" path="res://misc_resources/crt_mine.gdshader" id="1_j15ui"]
+
+[resource]
+shader = ExtResource("1_j15ui")
+shader_parameter/overlay = true
+shader_parameter/scanlines_opacity = 0.018000000855
+shader_parameter/scanlines_width = 0.0130000006175
+shader_parameter/grille_opacity = 0.0670000031825
+shader_parameter/resolution = Vector2(1920, 1080)
+shader_parameter/roll_speed = 8.0
+shader_parameter/roll_size = 0.3290000156275
+shader_parameter/roll_variation = 0.806
+shader_parameter/distort_intensity = 0.011
+shader_parameter/noise_opacity = 0.12800000608
+shader_parameter/noise_speed = 2.5
+shader_parameter/static_noise_intensity = 0.02000000095
+shader_parameter/aberration = -0.00599995278499998
+shader_parameter/warp_amount = 0.10000000475

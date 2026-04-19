@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TargetData" format=3 uid="uid://cqt83ww7wta0p"]
+
+[ext_resource type="Script" uid="uid://qd1shx57y0ck" path="res://data/target_data.gd" id="1_i1q5v"]
+
+[resource]
+script = ExtResource("1_i1q5v")
+code_name = "ST"
+code_num = 18
+frequencies = Dictionary[int, int]({
+200: 9,
+210: 4,
+220: 5,
+230: 2
+})
+distance = 20
+metadata/_custom_type_script = "uid://qd1shx57y0ck"

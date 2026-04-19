@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="TargetData" format=3 uid="uid://13l7p1irtys4"]
+
+[ext_resource type="Script" uid="uid://qd1shx57y0ck" path="res://data/target_data.gd" id="1_iscql"]
+
+[resource]
+script = ExtResource("1_iscql")
+code_name = "VR"
+code_num = 17
+frequencies = Dictionary[int, int]({
+200: 4,
+210: 5,
+215: 4,
+230: 3,
+240: 3,
+250: 1,
+260: 3,
+265: 4,
+270: 2
+})
+distance = 20
+metadata/_custom_type_script = "uid://qd1shx57y0ck"

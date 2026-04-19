@@ -1,0 +1,295 @@
+[gd_scene format=3 uid="uid://dmdbugc8e0xh7"]
+
+[ext_resource type="Script" uid="uid://dg5tsc2f221p2" path="res://panels/target/target_data_panel.gd" id="1_skp56"]
+[ext_resource type="Theme" uid="uid://3b6jfloh1m1l" path="res://ui/theme/theme_main.tres" id="2_jtpl0"]
+[ext_resource type="StyleBox" uid="uid://dwh70kg0acgqb" path="res://ui/theme/panel_style_bw.tres" id="3_fkn7e"]
+[ext_resource type="Texture2D" uid="uid://brppvgsx0x3uh" path="res://ui/divisor_green.png" id="3_gkdgv"]
+[ext_resource type="PackedScene" uid="uid://cc2k1xxn6sbd1" path="res://panels/target/frequency_bar.tscn" id="3_pg41l"]
+[ext_resource type="Texture2D" uid="uid://bh1mf85i7mrk" path="res://ui/x_bw.png" id="4_mblth"]
+[ext_resource type="FontFile" uid="uid://dnflnkinr1xkv" path="res://ui/fonts/MonospaceBold.ttf" id="4_r0lcr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mr25o"]
+bg_color = Color(0.03137255, 0.08627451, 0.13725491, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+anti_aliasing = false
+
+[node name="TargetDataPanel" type="Control" unique_id=177394040]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -706.5
+offset_top = -350.25
+offset_right = 706.5
+offset_bottom = 350.25
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_skp56")
+
+[node name="InspectPanel" type="Panel" parent="." unique_id=1143053521]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_jtpl0")
+theme_override_styles/panel = SubResource("StyleBoxFlat_mr25o")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="InspectPanel" unique_id=1473307595]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="InspectPanel/ScrollContainer" unique_id=2046453217]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="InspectPanel/ScrollContainer/MarginContainer" unique_id=1311501044]
+layout_mode = 2
+
+[node name="Top" type="Panel" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer" unique_id=16269811]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_styles/panel = ExtResource("3_fkn7e")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Top" unique_id=1068133986]
+custom_minimum_size = Vector2(0, 17)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -30.0
+offset_top = -8.0
+offset_right = -8.0
+offset_bottom = 9.0
+grow_horizontal = 0
+grow_vertical = 2
+alignment = 1
+
+[node name="PopupClose" type="Button" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Top/HBoxContainer" unique_id=131642713]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(17, 17)
+layout_mode = 2
+theme = ExtResource("2_jtpl0")
+icon = ExtResource("4_mblth")
+icon_alignment = 1
+
+[node name="TargetLabel" type="Label" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Top" unique_id=291540785]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 12.0
+offset_top = -11.5
+offset_right = 55.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_r0lcr")
+text = "RS-11"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer" unique_id=438236720]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel" unique_id=680579090]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer" unique_id=1002977956]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer" unique_id=434618204]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=893412105]
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "P
+o
+w
+e
+r"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1980183192]
+layout_mode = 2
+texture = ExtResource("3_gkdgv")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=288416948]
+layout_mode = 2
+theme_override_constants/separation = 4
+alignment = 2
+
+[node name="Label" type="Label" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=1402623109]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=1565499613]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "9"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=881157943]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "8"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=1271305950]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "7"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=1556633223]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "6"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label6" type="Label" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=865979131]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label7" type="Label" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=1057585768]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label8" type="Label" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=327078805]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label9" type="Label" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=584950733]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label10" type="Label" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=1527880344]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label11" type="Label" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=203364353]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=1262063368]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=874503028]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="FrequencyContainer" type="HBoxContainer" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=617920444]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="FrequencyBar" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/FrequencyContainer" unique_id=1599294504 instance=ExtResource("3_pg41l")]
+layout_mode = 2
+
+[node name="TextureRect" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/FrequencyContainer/FrequencyBar" index="0" unique_id=1543496494]
+custom_minimum_size = Vector2(0, 500)
+
+[node name="FrequencyBar2" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/FrequencyContainer" unique_id=301800792 instance=ExtResource("3_pg41l")]
+layout_mode = 2
+
+[node name="FrequencyBar3" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/FrequencyContainer" unique_id=808127488 instance=ExtResource("3_pg41l")]
+layout_mode = 2
+
+[node name="FrequencyBar4" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/FrequencyContainer" unique_id=861685404 instance=ExtResource("3_pg41l")]
+layout_mode = 2
+
+[node name="FrequencyBar5" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/FrequencyContainer" unique_id=911163390 instance=ExtResource("3_pg41l")]
+layout_mode = 2
+
+[node name="FrequencyBar6" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/FrequencyContainer" unique_id=1854421101 instance=ExtResource("3_pg41l")]
+layout_mode = 2
+
+[node name="FrequencyBar7" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/FrequencyContainer" unique_id=232299283 instance=ExtResource("3_pg41l")]
+layout_mode = 2
+
+[node name="FrequencyBar8" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/FrequencyContainer" unique_id=1379645861 instance=ExtResource("3_pg41l")]
+layout_mode = 2
+
+[node name="FrequencyBar9" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/FrequencyContainer" unique_id=1222549327 instance=ExtResource("3_pg41l")]
+layout_mode = 2
+
+[node name="FrequencyBar10" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/FrequencyContainer" unique_id=1435719150 instance=ExtResource("3_pg41l")]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=900741811]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer" unique_id=1004616173]
+layout_mode = 2
+texture = ExtResource("3_gkdgv")
+
+[node name="Freq" type="Label" parent="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer" unique_id=1660660365]
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "Frequency (MHz)"
+horizontal_alignment = 1
+
+[editable path="InspectPanel/ScrollContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/FrequencyContainer/FrequencyBar"]

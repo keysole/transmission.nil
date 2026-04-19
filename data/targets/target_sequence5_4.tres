@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TargetData" format=3 uid="uid://d0xsj6h4we4ts"]
+
+[ext_resource type="Script" uid="uid://qd1shx57y0ck" path="res://data/target_data.gd" id="1_tagg0"]
+
+[resource]
+script = ExtResource("1_tagg0")
+code_name = "AK"
+code_num = 10
+frequencies = Dictionary[int, int]({
+45: 3,
+55: 4,
+60: 2
+})
+metadata/_custom_type_script = "uid://qd1shx57y0ck"

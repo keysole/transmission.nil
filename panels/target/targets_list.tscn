@@ -1,0 +1,131 @@
+[gd_scene format=3 uid="uid://ctf53iwau2jdq"]
+
+[ext_resource type="Script" uid="uid://d21ct2017f46a" path="res://panels/target/targets_list.gd" id="1_5uy0h"]
+[ext_resource type="Theme" uid="uid://3b6jfloh1m1l" path="res://ui/theme/theme_main.tres" id="1_usply"]
+[ext_resource type="StyleBox" uid="uid://dwh70kg0acgqb" path="res://ui/theme/panel_style_bw.tres" id="2_5uy0h"]
+[ext_resource type="FontFile" uid="uid://dnflnkinr1xkv" path="res://ui/fonts/MonospaceBold.ttf" id="3_m3isr"]
+[ext_resource type="PackedScene" uid="uid://ckxyunmyrdjvg" path="res://panels/target/target_button.tscn" id="4_q5xus"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mr25o"]
+bg_color = Color(0.03137255, 0.08627451, 0.13725491, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+anti_aliasing = false
+
+[node name="TargetList" type="Control" unique_id=2120150711]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -369.5
+offset_top = -368.0
+offset_right = 369.5
+offset_bottom = 368.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5uy0h")
+
+[node name="InspectPanel" type="Panel" parent="." unique_id=1143053521]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_usply")
+theme_override_styles/panel = SubResource("StyleBoxFlat_mr25o")
+
+[node name="MarginContainer" type="MarginContainer" parent="InspectPanel" unique_id=2046453217]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="InspectPanel/MarginContainer" unique_id=1311501044]
+layout_mode = 2
+
+[node name="Top" type="Panel" parent="InspectPanel/MarginContainer/VBoxContainer" unique_id=16269811]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_styles/panel = ExtResource("2_5uy0h")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="InspectPanel/MarginContainer/VBoxContainer/Top" unique_id=1068133986]
+custom_minimum_size = Vector2(0, 17)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -30.0
+offset_top = -8.0
+offset_right = -8.0
+offset_bottom = 9.0
+grow_horizontal = 0
+grow_vertical = 2
+alignment = 1
+
+[node name="PopupClose" type="Button" parent="InspectPanel/MarginContainer/VBoxContainer/Top/HBoxContainer" unique_id=131642713]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(17, 17)
+layout_mode = 2
+theme = ExtResource("1_usply")
+icon_alignment = 1
+
+[node name="TargetLabel" type="Label" parent="InspectPanel/MarginContainer/VBoxContainer/Top" unique_id=291540785]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 12.0
+offset_top = -11.5
+offset_right = 55.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_m3isr")
+text = "Targets List"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="InspectPanel/MarginContainer/VBoxContainer" unique_id=438236720]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="InspectPanel/MarginContainer/VBoxContainer/Panel" unique_id=680579090]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 8
+
+[node name="ButtonsContainer" type="VBoxContainer" parent="InspectPanel/MarginContainer/VBoxContainer/Panel/MarginContainer" unique_id=642500214]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Button" parent="InspectPanel/MarginContainer/VBoxContainer/Panel/MarginContainer/ButtonsContainer" unique_id=617683363 instance=ExtResource("4_q5xus")]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="InspectPanel/MarginContainer/VBoxContainer/Panel/MarginContainer/ButtonsContainer" unique_id=743733384]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "Target button"

@@ -1,0 +1,170 @@
+[gd_scene format=3 uid="uid://cjhxtw7w3dytk"]
+
+[ext_resource type="PackedScene" uid="uid://c8lspouafi68n" path="res://test/program_base.tscn" id="1_0d54j"]
+[ext_resource type="Script" uid="uid://ckpx7xllchlvq" path="res://panels/map/map_panel.gd" id="2_k5pjs"]
+[ext_resource type="Texture2D" uid="uid://dib88xoktgtsk" path="res://ui/dash_h.png" id="2_klbcc"]
+[ext_resource type="Texture2D" uid="uid://b7ch8vv3srnd2" path="res://ui/dash_v.png" id="3_rlo7y"]
+[ext_resource type="Texture2D" uid="uid://lsw430vn5itq" path="res://panels/map/target.png" id="4_7sbcd"]
+[ext_resource type="PackedScene" uid="uid://8tv6sets7l2" path="res://panels/map/target.tscn" id="6_0be4a"]
+
+[sub_resource type="Environment" id="Environment_7sbcd"]
+background_mode = 3
+glow_enabled = true
+
+[node name="Radar" unique_id=1518343479 instance=ExtResource("1_0d54j")]
+script = ExtResource("2_k5pjs")
+
+[node name="MarginContainer" parent="PanelContainer/MarginContainer/VBoxContainer/Panel" parent_id_path=PackedInt32Array(1301783294) index="0" unique_id=1638726641]
+unique_name_in_owner = true
+mouse_filter = 1
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer/MarginContainer/VBoxContainer/Panel/MarginContainer" index="0" unique_id=572774303]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("2_klbcc")
+stretch_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="PanelContainer/MarginContainer/VBoxContainer/Panel/MarginContainer" index="1" unique_id=1232813584]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("3_rlo7y")
+stretch_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="PanelContainer/MarginContainer/VBoxContainer/Panel/MarginContainer" index="2" unique_id=72416070]
+modulate = Color(2.5032542, 2.5032542, 1.8661275, 1)
+position = Vector2(144, 106)
+scale = Vector2(4, 4)
+texture = ExtResource("4_7sbcd")
+
+[node name="Center" type="Control" parent="PanelContainer/MarginContainer/VBoxContainer/Panel/MarginContainer" index="3" unique_id=262679595]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Control" type="Control" parent="PanelContainer/MarginContainer/VBoxContainer/Panel/MarginContainer" index="4" unique_id=1272170384]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/Control" index="0" unique_id=1749529301]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -21.0
+offset_top = -2.0
+offset_right = 19.0
+offset_bottom = 43.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 64
+text = "N"
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/Control" index="1" unique_id=1409288353]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -111.0
+offset_bottom = 88.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 64
+text = "NE"
+horizontal_alignment = 1
+
+[node name="Label6" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/Control" index="2" unique_id=1263120143]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -111.0
+offset_top = -88.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 64
+text = "SE"
+horizontal_alignment = 1
+
+[node name="Label7" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/Control" index="3" unique_id=1671420105]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -88.0
+offset_right = 111.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 64
+text = "SW"
+horizontal_alignment = 1
+
+[node name="Label8" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/Control" index="4" unique_id=1658069678]
+layout_mode = 1
+offset_right = 111.0
+offset_bottom = 88.0
+theme_override_font_sizes/font_size = 64
+text = "NW"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/Control" index="5" unique_id=1631085512]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -22.5
+offset_right = 40.0
+offset_bottom = 22.5
+grow_vertical = 2
+theme_override_font_sizes/font_size = 64
+text = "W"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/Control" index="6" unique_id=1015648498]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -22.5
+offset_bottom = 22.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 64
+text = "E"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/Panel/MarginContainer/Control" index="7" unique_id=319299506]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -45.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 64
+text = "S"
+horizontal_alignment = 1
+
+[node name="Target" parent="PanelContainer/MarginContainer/VBoxContainer/Panel/MarginContainer" index="5" unique_id=2014813233 instance=ExtResource("6_0be4a")]
+position = Vector2(484, 160)
+
+[node name="Target2" parent="PanelContainer/MarginContainer/VBoxContainer/Panel/MarginContainer" index="6" unique_id=394143513 instance=ExtResource("6_0be4a")]
+position = Vector2(1517, 754)
+
+[node name="Target3" parent="PanelContainer/MarginContainer/VBoxContainer/Panel/MarginContainer" index="7" unique_id=1220571755 instance=ExtResource("6_0be4a")]
+position = Vector2(451, 751)
+
+[node name="Target4" parent="PanelContainer/MarginContainer/VBoxContainer/Panel/MarginContainer" index="8" unique_id=420949493 instance=ExtResource("6_0be4a")]
+position = Vector2(1314, 310)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="1" unique_id=800324538]
+environment = SubResource("Environment_7sbcd")
