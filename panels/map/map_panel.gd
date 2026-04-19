@@ -32,7 +32,6 @@ var draw_radius = small_draw_radius
 
 func _ready() -> void:
 	connect_targets()
-	%MarginContainer.gui_input.connect(_screen_gui_input)
 	%ScanAreaRadial.area_entered.connect(_scan_area_radial_entered)
 	%ScanAreaDirectional.area_entered.connect(_scan_area_directional_entered)
 	
@@ -62,7 +61,6 @@ func _process(delta: float) -> void:
 		
 		if draw_radius >= big_draw_radius:
 			draw_radius = small_draw_radius
-			#drawing_sector = false
 			directional_scan_active = false
 			finished_directional_scan.emit()
 			queue_redraw()
@@ -79,26 +77,14 @@ func _draw() -> void:
 
 
 func draw_sector() -> void:
-	#var small_draw_radius = 100
-	#svar big_draw_radius = 200
-#	var draw_angle_start = 135
 	var outline_color = Color.GREEN
 	var line_width = 2
 	var draw_radius = 150
 	var fill_color = Color.GREEN
-	#var draw_angle = 30
 	
 	
 	draw_circle_arc(%Center.position, small_draw_radius, draw_angle_start - draw_angle, draw_angle_start + draw_angle, outline_color, line_width)
 	draw_circle_arc(%Center.position, big_draw_radius, draw_angle_start - draw_angle, draw_angle_start + draw_angle, outline_color, line_width)
-	
-	var pos_1 = %Center.position - Vector2.RIGHT.rotated(deg_to_rad(draw_angle_start - draw_angle) + PI/2.0) * small_draw_radius
-	#draw_circle(pos_1, 10, Color.RED)
-	
-	var pos_2 = %Center.position - Vector2.RIGHT.rotated(deg_to_rad(draw_angle_start + draw_angle) + PI/2.0) * small_draw_radius
-	#draw_circle(pos_2, 10, Color.RED)
-
-	
 	
 	var start_pos = %Center.position - Vector2.RIGHT.rotated(deg_to_rad(draw_angle_start - draw_angle) + PI/2.0) * small_draw_radius
 	var end_pos = %Center.position - Vector2.RIGHT.rotated(deg_to_rad(draw_angle_start - draw_angle) + PI/2.0) * big_draw_radius
@@ -165,28 +151,6 @@ func _show_target_data_panel(target_data : TargetData) -> void:
 	var target_data_panel = TARGET_DATA_PANEL.instantiate() as TargetDataPanel
 	target_data_panel.set_frequency_data(target_data, frequency_start)
 	%Panels.add_child(target_data_panel)
-	
-
-func _unhandled_input(event: InputEvent) -> void:
-	return
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed() and !mouse_on_target:
-		spawn_wave()
-
-
-func _screen_gui_input(event: InputEvent) -> void:
-	return
-	#return
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed() and !mouse_on_target:
-		spawn_wave()
-
-
-func spawn_wave() -> void:
-	var new_wave = WAVE.instantiate()
-	
-	var angle = %Center.global_position.angle_to_point(get_global_mouse_position())
-	print(rad_to_deg(angle))
-	new_wave.rotation = angle
-	%Center.add_child(new_wave)
 
 
 func hide_targets(sequence : World.Sequence) -> void:
@@ -199,6 +163,9 @@ func hide_targets(sequence : World.Sequence) -> void:
 
 
 func show_targets(sequence : World.Sequence) -> void:
+	%CollisionPolygon2D.polygon = PackedVector2Array()
+	%CollisionShapeRadial.shape.radius = 0
+	
 	if targets.get(sequence) != null and sequence != World.Sequence.SIXTH:
 		var current_target = targets.get(sequence)
 		current_target.show()

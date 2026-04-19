@@ -2,7 +2,7 @@
 
 [ext_resource type="FontFile" uid="uid://dx2f5qoi1o6ty" path="res://ui/fonts/Monospace.ttf" id="1_0m36j"]
 [ext_resource type="Script" uid="uid://cuigx15qtx1pd" path="res://panels/transmission/answer_container.gd" id="1_yvesx"]
-[ext_resource type="Script" uid="uid://deqluk4efxagw" path="res://panels/transmission/name_edit.gd" id="3_vt232"]
+[ext_resource type="Script" uid="uid://deqluk4efxagw" path="res://test/name_edit.gd" id="3_vt232"]
 
 [node name="AnswerContainer" type="HBoxContainer" unique_id=680521425]
 alignment = 1

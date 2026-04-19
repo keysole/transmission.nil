@@ -14,7 +14,7 @@ func set_frequency_data(target_data : TargetData, frequency_start : int) -> void
 	
 	%TargetLabel.text = target_data.code_name + '-' + str(target_data.code_num)
 	
-	var count = (World.current_max_freq - World.current_min_freq) / FREQUENCY_STEP
+	var count = (World.current_max_freq - World.current_min_freq) / FREQUENCY_STEP + 1
 	
 	var current_frequency = World.current_min_freq
 	for i in range(count):
